@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema9</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que elija un topping
+var topping = prompt("Elige un topping para tu helado (oreo, KitKat o brownie):");
+
+// Precio base del helado sin topping
+var precioBase = 50;
+
+// Inicializar el precio del topping
+var precioTopping = 0;
+
+// Determinar el precio del topping seleccionado
+switch (topping.toLowerCase()) {
+  case "oreo":
+    precioTopping = 10;
+    break;
+  case "kitkat":
+    precioTopping = 15;
+    break;
+  case "brownie":
+    precioTopping = 20;
+    break;
+  default:
+    alert("No tenemos este topping, lo sentimos.");
+    break;
+}
+
+// Calcular el costo total del helado
+var costoTotal = precioBase + precioTopping;
+
+// Mostrar el costo total al usuario
+if (precioTopping > 0) {
+  alert("El costo de tu helado con " + topping + " es de " + costoTotal + " MXN.");
+} else {
+  alert("El costo de tu helado sin topping es de " + costoTotal + " MXN.");
+}
+</script>
+</html>

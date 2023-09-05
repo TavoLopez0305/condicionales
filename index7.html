@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 7</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que ingrese un día de la semana
+var diaSemana = prompt("Por favor, ingresa un día de la semana:");
+
+// Convertir la entrada del usuario a minúsculas para hacer la comparación más flexible
+diaSemana = diaSemana.toLowerCase();
+
+// Verificar el día ingresado y mostrar un mensaje correspondiente
+if (diaSemana === "lunes") {
+  alert("Hoy es lunes. ¡Ánimo, comienza la semana!");
+} else if (diaSemana === "viernes") {
+  alert("¡Es viernes! ¡El fin de semana está cerca!");
+} else if (diaSemana === "sabado" || diaSemana === "domingo") {
+  alert("¡Es fin de semana! Disfruta tu tiempo libre.");
+} else {
+  alert("El día ingresado no es lunes, viernes, sábado ni domingo.");
+}
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema8</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que ingrese una calificación
+var calificacion = parseFloat(prompt("Por favor, ingresa una calificación (entre 1 y 10):"));
+
+// Verificar si la calificación está en el rango válido
+if (calificacion >= 1 && calificacion <= 10) {
+  // Determinar el mensaje correspondiente según la calificación
+  if (calificacion < 6) {
+    alert("Reprobado");
+  } else if (calificacion >= 6 && calificacion <= 8) {
+    alert("Regular");
+  } else if (calificacion === 9) {
+    alert("Bien");
+  } else if (calificacion === 10) {
+    alert("Excelente");
+  }
+} else {
+  alert("La calificación ingresada no está en el rango válido (entre 1 y 10).");
+}
+</script>
+</html>l

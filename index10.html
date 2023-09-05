@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que elija un nivel de programa educativo
+var nivel = prompt("Elige un nivel de programa educativo (Course, Carrera o Master):");
+
+// Precio mensual base según el nivel elegido
+var precioMensual = 0;
+var duracion = 0; // Duración en meses
+var nombreNivel = ""; // Nombre del nivel para mostrar en el mensaje
+
+switch (nivel.toLowerCase()) {
+  case "course":
+    precioMensual = 4999;
+    duracion = 2;
+    nombreNivel = "Course";
+    break;
+  case "carrera":
+    precioMensual = 3999;
+    duracion = 6;
+    nombreNivel = "Carrera";
+    break;
+  case "master":
+    precioMensual = 2999;
+    duracion = 12;
+    nombreNivel = "Master";
+    break;
+  default:
+    alert("Nivel no válido. Por favor, elige Course, Carrera o Master.");
+    break;
+}
+
+if (precioMensual > 0) {
+  // Solicitar al usuario si cuenta con una beca y calcular el descuento correspondiente
+  var beca = prompt("¿Cuentas con alguna beca (Facebook, Google o Jesua)? Escribe el nombre de la beca o deja en blanco si no tienes:");
+  var descuento = 0;
+
+  switch (beca.toLowerCase()) {
+    case "facebook":
+      descuento = 0.20;
+      break;
+    case "google":
+      descuento = 0.15;
+      break;
+    case "jesua":
+      descuento = 0.50;
+      break;
+    case "":
+      break;
+    default:
+      alert("Beca no válida. No se aplicará descuento.");
+      break;
+  }
+
+  // Calcular el precio mensual con descuento
+  var precioMensualConDescuento = precioMensual * (1 - descuento);
+
+  // Calcular el costo total del programa
+  var costoTotal = precioMensualConDescuento * duracion;
+
+  // Mostrar el costo mensual con descuento y el costo total al usuario
+  alert("El costo mensual con descuento de " + nombreNivel + " es de " + precioMensualConDescuento + " MXN.");
+  alert("El costo total del programa " + nombreNivel + " es de " + costoTotal + " MXN.");
+}
+
+</script>
+</html>

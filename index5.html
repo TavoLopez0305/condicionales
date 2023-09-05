@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 5</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que ingrese el primer número
+var primerNumero = prompt("Por favor, ingresa el primer número:");
+
+// Convertir la entrada del usuario a un número entero
+primerNumero = parseFloat(primerNumero);
+
+// Solicitar al usuario que ingrese el segundo número
+var segundoNumero = prompt("Por favor, ingresa el segundo número:");
+
+// Convertir la entrada del usuario a un número entero
+segundoNumero = parseFloat(segundoNumero);
+
+// Verificar cuál de los dos números es menor
+if (isNaN(primerNumero) || isNaN(segundoNumero)) {
+  alert("Por favor, ingresa números válidos.");
+} else if (primerNumero < segundoNumero) {
+  alert("El primer número (" + primerNumero + ") es menor que el segundo número (" + segundoNumero + ").");
+} else {
+  alert("El segundo número (" + segundoNumero + ") es menor que el primer número (" + primerNumero + ").");
+}
+</script>
+</html>

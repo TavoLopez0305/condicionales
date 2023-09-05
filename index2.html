@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Problema2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Solicitar al usuario que ingrese un número
+var numero = prompt("Por favor, ingresa un número:");
+
+// Convertir la entrada del usuario a un número
+numero = parseFloat(numero);
+
+// Verificar si el número es divisible por 2
+if (isNaN(numero)) {
+  alert("La entrada no es un número válido.");
+} else if (numero % 2 === 0) {
+  alert(numero + " es divisible entre 2.");
+} else {
+  alert(numero + " no es divisible entre 2.");
+}
+</script>
+</html>
